@@ -36,9 +36,23 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    
+    'django.contrib.sites',
+
+    'rest_framework',
+    'rest_framework.authtoken',
+
+    'allauth',
+    'allauth.social',
+    'allauth.socialaccount',
+
+    'rest_auth',
+    'rest_auth.registration',
+
+    'crispy_forms' #for nice forms
+
     'users',
-    'rest_framework',  
-    'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
