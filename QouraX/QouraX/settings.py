@@ -37,17 +37,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     
+    #used when django th django project is powering more than one site and those sites need 
+    # to be differentiated in some way e.g using SITE_ID
     'django.contrib.sites',
 
     'rest_framework',
     'rest_framework.authtoken',
 
-    'allauth',
-    'allauth.social',
-    'allauth.socialaccount',
 
+    #authentication third party apps
     'rest_auth',
     'rest_auth.registration',
+
+    #rest_auth dependencies
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount', # allows for authentication through social media accounts
 
     'crispy_forms' #for nice forms
 
