@@ -37,11 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     
-    #used when django th django project is powering more than one site and those sites need 
-    # to be differentiated in some way e.g using SITE_ID
+    #used when django th django project is powering more than one site and
+    #  those sites need to be differentiated in some way e.g using SITE_ID
     'django.contrib.sites',
 
-    'rest_framework',
+    'rest_framework', 
     'rest_framework.authtoken',
 
 
