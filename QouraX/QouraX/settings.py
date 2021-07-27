@@ -38,24 +38,24 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    #used when django th django project is powering more than one site and
-    #  those sites need to be differentiated in some way e.g using SITE_ID
-   #'django.contrib.sites',
+    #the app below is used when django th django project is powering more than one 
+    # site and those sites need to be differentiated in some way e.g using SITE_ID
+    'django.contrib.sites',
 
     'rest_framework', 
     'rest_framework.authtoken',
 
 
     # #authentication third party apps
-    # 'rest_auth',
-    # 'rest_auth.registration',
+    'rest_auth',
+    'rest_auth.registration',
 
     # #rest_auth dependencies
-    # 'allauth',
-    # 'allauth.account',
-    # 'allauth.socialaccount', # allows for authentication through social media accounts
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount', # allows for authentication through social media accounts
 
-    # 'crispy_forms', #for nice forms
+    'crispy_forms', #for nice forms
 
     'users',
     
@@ -147,3 +147,13 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.CustomUser'
+
+#django crispy forms
+CRISPY_TEMPLATE_PACK = "bootrap4" #should look like btrp4 forms
+
+#django.contrib.sites
+SITE_ID = 1
+
+#django-allauth
+ACCOUNT_EMAIL_VERIFICATION = "none" #disable email verification on register
+ACCOUNT_EMAIL_REQUIRED = (True) #email must be included
